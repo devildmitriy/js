@@ -1,31 +1,33 @@
 'use strict';
-var number = 5;
-var string = 'hellow';
-var sym = Symbol();
-var boolean = true;
-null;
-undefined;
-var obj = {};
-console.log(4/0);
-console.log('string'*3);
 
-let dude = {
-    name: 'dude',
-    age: 25,
-    isMarried: false
-};
+// Какое будет выведено значение: let x = 5; alert( x++ );  5
 
-console.log(dude["isMarried"]);
+// Чему равно такое выражение: [ ] + false - null + true ? nan
+console.log([ ] + false - null + true);
 
-// alert(dude.name + ', whats up ?');
+// Что выведет этот код: let y = 1; let x = y = 2; alert(x); ? 2
 
-/* let isOk = confirm(dude.name + ' you are ok?');
-if (isOk) {
-    alert('ok'); 
-} else{
-    alert('=((');
-} */
+// Чему равна сумма [ ] + 1 + 2? 12
 
-let message = prompt('how old you?','lol');
-alert(message);25
+// Что выведет этот код: alert( "1"[0] )? 1
 
+// Чему равно 2 && 1 && null && 0 && undefined ? null
+console.log(2 && 1 && null && 0 && undefined);
+
+// Есть ли разница между выражениями? !!( a && b ) и (a && b)? нет
+let a = false;let b = true;
+console.log(!!( a && b ));
+
+// Что выведет этот код: alert( null || 2 && 3 || 4 ); ? 3
+
+// a = [1, 2, 3]; b = [1, 2, 3]; Правда ли что a == b ? нет
+let a1 = [1, 2, 3];
+let b1 = [1, 2, 3];
+console.log(a1 == b1);
+// Что выведет этот код: alert( +"Infinity" ); ? Infinity
+
+// Верно ли сравнение: "Ёжик" > "яблоко"? нет
+console.log("Ёжик" > "яблоко");
+
+// Чему равно 0 || "" || 2 || undefined || true || falsе ? 2
+console.log(0 || "" || 2 || undefined || true || falsе);
