@@ -1,1 +1,3 @@
-console.log("Ёжик" > "яблоко");
+let str = 'Text';
+console.log(str.toUpperCase());
+console.log(str);
